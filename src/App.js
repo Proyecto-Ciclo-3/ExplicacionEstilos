@@ -4,20 +4,19 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <form>
+        <input type='email'/>
+        <input type='file'/>
+        <input type='number' min='0'/>
+        <input type='text' required/>
+        <input type='password' required/>
+        <select required>
+          <option disabled>Seleccione una opción</option>
+          <option>op1</option>
+          <option>op2</option>
+        </select>
+        <button type='submit'>Login</button>
+      </form>
     </div>
   );
 }
